@@ -13,7 +13,7 @@ desiredState:
         id: elasticsearch-data
         containers:
           - name: elasticsearch-data
-            image: pires/elasticsearch:data
+            image: cleawing/elasticsearch:data
             ports:
               - name: transport
                 containerPort: 9300
