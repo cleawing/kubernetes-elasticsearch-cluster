@@ -1,5 +1,5 @@
 # Ubuntu 14.04.x + Oracle JRE 8
-FROM pires/elasticsearch:base
+FROM cleawing/elasticsearch:base
 
 MAINTAINER pjpires@gmail.com
 
