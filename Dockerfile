@@ -1,5 +1,5 @@
 # Ubuntu 14.04.x + Oracle JRE 8
-FROM dockerfile/elasticsearch
+FROM elasticsearch:1.5
 
 MAINTAINER pjpires@gmail.com
 
