@@ -8,6 +8,8 @@ EXPOSE 9200 9300
 
 # Install runit
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list && \
+  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5 && \
+  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32 && \
   apt-get update && \
   apt-get upgrade -y && \
   apt-get install -y runit && \
