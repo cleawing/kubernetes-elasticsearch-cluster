@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec /elasticsearch/bin/elasticsearch
+exec /usr/share/elasticsearch/bin/elasticsearch
