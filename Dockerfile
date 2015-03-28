@@ -17,10 +17,10 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/
   apt-get autoclean
 
 # Override elasticsearch.yml config, otherwise plug-in install will fail
-ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
+ADD elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
 
 # Install Kubernetes discovery plug-in
-RUN /elasticsearch/bin/plugin --install io.fabric8/elasticsearch-cloud-kubernetes/1.1.0 --verbose
+RUN /usr/share/elasticsearch/bin/plugin --install io.fabric8/elasticsearch-cloud-kubernetes/1.1.0 --verbose
 
 ADD run-elasticsearch.sh /etc/service/elasticsearch/run
 RUN chmod u+x /etc/service/elasticsearch/run
